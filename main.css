@@ -93,7 +93,7 @@ body{
 
 .header-menu{
     display:none;
-    float: right;
+    align-self: flex-end;
 }
   
 /*styles the footer*/
