@@ -1,0 +1,256 @@
+ *{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Styles the body*/
+body{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+/*  Styles the Header */
+.page-header{
+    display: flex;
+    /*flex-wrap: wrap;*/
+    width: 100%;
+    margin-top: 2em;
+    justify-content: space-between;
+    overflow-x: hidden;
+
+}
+
+.header-name{
+   /*width: 50%;*/
+}
+
+/*  STYLES THE Nav bar within the header */
+
+.nav-bar{
+    /*width: 50%;*/
+     align-self: center;
+ }
+.nav{
+    width: 100%;
+    
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+    /*display: flex;*/
+   /* justify-content: space-between;*/
+}
+
+.nav-item{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.nav a{
+    text-decoration: none;
+    padding: 1.5em;
+    color: white;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* hides hamburger menu*/
+
+.header-menu {
+    display: none;
+}
+
+/* Styles the images section */
+.images {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    
+}
+
+
+.images-portfolio{
+    margin-right: 2em;
+    width: 100%;
+}
+
+img{
+    max-width: 100%;
+
+
+}
+.imageCircle{
+    width: 10%;
+    border: 5px  solid white;
+    border-radius: 50%;
+    margin-top: 1em;
+}
+
+.main-image{
+    width: 100%;
+    background-color: lightgrey;
+    border: 2px solid gray;
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    padding: 2em;
+}
+
+.header-image{
+    /*  position: relative;*/
+  
+}
+
+
+
+/*styles the footer*/
+.footer {
+    background-color:black;
+    color: white;
+    margin-top: 2em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 549px) {
+    .images{
+        display: flex;
+        flex-direction: column;
+    } 
+    .page-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        overflow: hidden;
+    
+    }
+
+   /* body{
+        margin: 0 2em;
+        box-sizing: border-box;
+    
+    }*/
+   
+
+    .images-portfolio{
+        margin-bottom: 2em;
+    }
+
+    
+}
+
+@media screen and (min-width: 701px){
+    .images{
+        display: flex;
+        flex-direction: row;
+    } 
+    .page-header{
+        display: flex;
+        flex-wrap:nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        overflow: hidden !important;
+    
+    }
+    .header-name{
+        margin-right: 1em;
+    }
+
+    .nav-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        width: 100%;
+        display: flex;
+       justify-content: space-between;
+       overflow: hidden;
+    }
+
+    .nav-item{
+        display: inline-block;
+        padding: 10px;
+        text-transform: uppercase;
+    }
+
+
+    body{
+        margin: 0 4em;
+        box-sizing: border-box;
+        
+    }
+   
+    
+}
+
+
+@media screen and (max-width: 700px){
+
+    .nav {
+        z-index: 10;
+        background-color: #fff;
+        width: 300px;
+        position: absolute;
+
+        /* This trasform moves the drawer off canvas. */
+        -webkit-transform: translate(-300px, 0);
+        -ms-transform: translate(-300px, 0);
+        transform: translate(-300px, 0);
+        /* Optionally, we animate the drawer. */
+        transition: transform 0.3s ease;
+    }
+    .nav.open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    .nav-bar{
+        align-self: flex-end;
+        margin: 0;
+        margin-right: 0;
+    }
+    .nav-item {
+       display: list-item;
+        border-bottom: 1px solid #E0E0E0;
+       width: 100%;
+        text-align: left;
+    }    
+
+    .header-menu {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        padding: 1em;
+        font-size: 24px;
+    }
+    
+    body{
+        overflow-x: hidden;
+    }
+
+}
+
+@media screen and (min-width: 900px){
+    body{
+        margin: 0 4em;
+        box-sizing: border-box;
+
+    }
+}
