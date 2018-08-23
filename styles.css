@@ -207,7 +207,7 @@ img{
     .nav {
         z-index: 10;
         background-color: #fff;
-        width: 300px;
+        width: 250px;
         position: absolute;
 
         /* This trasform moves the drawer off canvas. */
